@@ -438,13 +438,7 @@
   let shopUrl = '';
 
   function openShop() {
-    if (!shopUrl) {
-      const url = prompt('https://nexatechshop.infinityfree.me/wp');
-      if (url && url.trim()) {
-        shopUrl = url.trim();
-        document.getElementById('url-text').textContent = shopUrl;
-      } else { return; }
-    }
+    shopUrl = "https://nexatechshop.infinityfree.me/wp";   
     window.open(shopUrl, '_blank');
   }
 </script>
